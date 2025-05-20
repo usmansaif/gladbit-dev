@@ -83,7 +83,60 @@
 <section class="section">
 
   <div class="container" data-aos="fade-up">
-    Under Development
+    <div class="row">
+      <!-- Contact Details (Left Column) -->
+      <div class="col-md-6">
+        <h3>Contact Details</h3>
+        <address>
+          <p><strong>Address:</strong><br>
+            1234 Business Street, Cityville, ABC 12345
+          </p>
+          <p><strong>Phone:</strong><br>
+            +1 (123) 456-7890
+          </p>
+          <p><strong>Email:</strong><br>
+            <a href="mailto:info@example.com">info@example.com</a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Contact Form (Right Column) -->
+      <div class="col-md-6">
+        <h3>Contact Form</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="question" class="form-label">General Question</label>
+            <select class="form-select" id="question" required>
+              <option value="" disabled selected>Select a question</option>
+              <option value="Product Inquiry">Product Inquiry</option>
+              <option value="Order Status">Order Status</option>
+              <option value="Support">Support</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">How may we help you?</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map Section (Full Width) -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3>Our Location</h3>
+        <div id="google-map" style="width: 100%; height: 400px;"></div>
+      </div>
+    </div>
   </div>
 
 </section>
