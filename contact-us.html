@@ -43,7 +43,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About</a></li>
-                <li class="dropdown"><a href="contact-us.html#"><span>Our Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="service.html"><span>Our Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="service/custom-software-development.html">Custom Software Development</a></li>
                         <li><a href="service/laravel-web-development.html">Web Development</a></li>
@@ -79,67 +79,110 @@
     <div class="page-title light-background">
     </div><!-- End Page Title -->
 
-    
-<section class="section">
+        <section id="contact" class="contact section">
 
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <!-- Contact Details (Left Column) -->
-      <div class="col-md-6">
-        <h3>Contact Details</h3>
-        <address>
-          <p><strong>Address:</strong><br>
-            1234 Business Street, Cityville, ABC 12345
-          </p>
-          <p><strong>Phone:</strong><br>
-            +1 (123) 456-7890
-          </p>
-          <p><strong>Email:</strong><br>
-            <a href="mailto:info@example.com">info@example.com</a>
-          </p>
-        </address>
-      </div>
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Have a Question or Project in Mind? We’d Love to Hear from You.</p>
+        </div>
 
-      <!-- Contact Form (Right Column) -->
-      <div class="col-md-6">
-        <h3>Contact Form</h3>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-          </div>
-          <div class="mb-3">
-            <label for="question" class="form-label">General Question</label>
-            <select class="form-select" id="question" required>
-              <option value="" disabled selected>Select a question</option>
-              <option value="Product Inquiry">Product Inquiry</option>
-              <option value="Order Status">Order Status</option>
-              <option value="Support">Support</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">How may we help you?</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <div class="info-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Contact Info</h3>
+                        <p>Prefer direct communication? Reach out using the details below.</p>
+
+                        <div class="info-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Our Location</h4>
+                                <p> 2nd Floor, Awais Tower</p>
+                                <p> Lahore, PK
+                                    . 54700</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Phone Number</h4>
+                                <p>+92(330) 999 3307</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Email Address</h4>
+                                <p>hello@gladbit.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Get In Touch</h3>
+                        <p>Reach Out. We’re Just a Message Away.</p>
+
+                        <form action="contact-us.html#" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="map-responsive">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.2094811774673!2d74.31864329999999!3d31.46342319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906b1193d3df5%3A0xcc38f3341d2b001b!2sRebel%20True%20Apparel!5e0!3m2!1sen!2s!4v1747864451052!5m2!1sen!2s"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
 
-    <!-- Google Map Section (Full Width) -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3>Our Location</h3>
-        <div id="google-map" style="width: 100%; height: 400px;"></div>
-      </div>
-    </div>
-  </div>
-
-</section>
 
 </main>
 
@@ -185,7 +228,7 @@
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
                     <li><a href="career.html">Career</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+
                     <li><a href="our-team.html">Our Team</a></li>
                     <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
