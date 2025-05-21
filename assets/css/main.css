@@ -2288,7 +2288,6 @@ section,
 .service-details .help-box {
     background-color: var(--accent-color);
     color: var(--contrast-color);
-    margin-top: 30px;
     padding: 30px 15px;
 }
 
