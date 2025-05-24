@@ -18,6 +18,7 @@
     --accent-color: #00285a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --warning-color: #ffc107; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -506,8 +507,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-    color: var(--footer-text-color);
-    border-color: var(--accent-color);
+    color: var(--warning-color);
+    border-color: var(--warning-color);
 }
 
 .footer h3 {
@@ -555,7 +556,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-    color: var(--accent-color);
+    color: var(--warning-color);
 }
 
 .footer .footer-contact p {
@@ -785,9 +786,14 @@ section,
 }
 
 .btn-subscribe {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--default-color);
+    border-radius: 0px 50px 50px 0px;
+}
+.btn-subscribe:hover {
+    border-color: var(--footer-text-color);
+    color: var(--footer-text-color);
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -1699,6 +1705,37 @@ section,
     font-weight: 500;
 }
 
+/* Full rounded corners */
+.rounded {
+    border-radius: 8px;
+}
+
+/* Rounded by side */
+.rounded-left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rounded-right {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.rounded-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Fully rounded (pill or circle if height = width) */
+.rounded-full {
+    border-radius: 9999px;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -2391,4 +2428,7 @@ section,
     padding: 0.5rem 1.5rem;  /* vertical and horizontal padding */
     display: inline-block;   /* fit width to content */
     transition: background-color 0.3s ease;
+}
+.text-primary {
+    color: var(--accent-color) !important;
 }
