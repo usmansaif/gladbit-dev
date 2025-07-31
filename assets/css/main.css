@@ -269,7 +269,7 @@ h6 {
     .navmenu li:hover > a,
     .navmenu .active,
     .navmenu .active:focus {
-        color: var(--nav-hover-color);
+        color: var(--nav-dropdown-hover-color);
     }
 
     .navmenu .dropdown ul {
@@ -1761,10 +1761,6 @@ section,
     color: var(--contrast-color);
 }
 
-.services .service-card:hover .read-more {
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
 .services .service-card .icon {
     width: 60px;
     height: 60px;
@@ -1797,9 +1793,12 @@ section,
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--accent-color);
+    color: #fff;
     font-weight: 500;
     transition: all 0.3s ease;
+    background: #00285a;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 
 .services .service-card .read-more i {
@@ -2463,21 +2462,6 @@ section,
     padding: 0;
 }
 
-.list-group-item {
-    background: linear-gradient(135deg, #eef6ff, #d0e4ff);
-    border: 1px solid #dbeaf9;
-    border-radius: 1rem;
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.list-group-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
@@ -2520,9 +2504,14 @@ section,
     background: var(--accent-color);
     font-size: 14px;
     border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
 .btn-primary:hover {
-    background: #1068b5;
+    background: var(--warning-color);
+    color: var(--accent-color);
 }
 
 .home-page-feature-list {
