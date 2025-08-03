@@ -29,6 +29,8 @@
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 </head>
 
 
@@ -97,7 +99,7 @@
                             <h5 class="card-title">Automating Logistics – Shipping Label Printer</h5>
                             <p class="card-text">We developed a custom desktop application for a date exporter, reducing manual label preparation time and ensuring 100% accuracy in shipping details.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies/shipping-label-automation-date-exporters.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -111,7 +113,7 @@
                             <h5 class="card-title">Streamlining Event Scheduling</h5>
                             <p class="card-text">We developed a custom event management platform for Idara Tul Mustafa, automating scholar scheduling and reducing coordination time by 50%.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies/idara-tul-mustafa-event-scheduling.html" class="btn btn-primary">Read More</a>
 
                         </div>
@@ -126,7 +128,7 @@
                             <h5 class="card-title">Automated Poultry Rate Updates</h5>
                             <p class="card-text">We created a fully automated SMS and web platform for PakPoultry.pk, providing verified poultry rates to subscribers across Pakistan.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies/pakpoultry-automated-updates.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -140,7 +142,7 @@
                             <h5 class="card-title">OTP-Based Food Order Confirmation</h5>
                             <p class="card-text">We developed a secure OTP-based verification app for Whatapratha, ensuring that deliveries reach the right customer, reducing errors and improving customer trust.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies/whatapratha-otp-delivery-confirmation.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -154,7 +156,7 @@
                             <h5 class="card-title">E-Commerce Platform Development</h5>
                             <p class="card-text">We built a fully customized e-commerce platform for a fashion retailer, enhancing customer experience with smooth payment integration and a seamless shopping experience.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies/netsites-ecommerce-optimization.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -168,7 +170,7 @@
                             <h5 class="card-title">Successful Cloud Migration</h5>
                             <p class="card-text">We helped a client migrate their entire infrastructure to the cloud, reducing operational costs and improving scalability for future growth.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="case-studies.html#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -275,6 +277,21 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Destroy old instances if any
+        if (window.glightboxInstance && typeof window.glightboxInstance.destroy === 'function') {
+            window.glightboxInstance.destroy();
+        }
+
+        // Create a new one cleanly
+        window.glightboxInstance = GLightbox({
+            selector: '.glightbox',
+            openEffect: 'fade',
+            closeEffect: 'fade',
+        });
+    });
+</script>
 
 </body>
 

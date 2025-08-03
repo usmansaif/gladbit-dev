@@ -29,6 +29,8 @@
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 </head>
 
 
@@ -260,6 +262,21 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Destroy old instances if any
+        if (window.glightboxInstance && typeof window.glightboxInstance.destroy === 'function') {
+            window.glightboxInstance.destroy();
+        }
+
+        // Create a new one cleanly
+        window.glightboxInstance = GLightbox({
+            selector: '.glightbox',
+            openEffect: 'fade',
+            closeEffect: 'fade',
+        });
+    });
+</script>
 
 </body>
 

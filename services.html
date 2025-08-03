@@ -29,6 +29,8 @@
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 </head>
 
 
@@ -112,7 +114,7 @@
                             <h5 class="card-title">Custom Software Development</h5>
                             <p class="card-text">We build tailored software solutions that solve real business challenges, helping you improve efficiency and scale faster.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/custom-software-development.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -125,7 +127,7 @@
                             <h5 class="card-title">Laravel Development</h5>
                             <p class="card-text">We build robust, scalable web applications using Laravel — the leading PHP framework known for speed, security, and elegant architecture.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/laravel-web-development.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -138,7 +140,7 @@
                             <h5 class="card-title">Backend Development</h5>
                             <p class="card-text">We craft powerful backend systems including admin dashboards, business management tools, and custom CMS solutions tailored to your workflow.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/backend-development-services.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -151,7 +153,7 @@
                             <h5 class="card-title">API & Backend Services</h5>
                             <p class="card-text">We architect and develop secure, scalable APIs and robust backend systems to power your platforms and integrations.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/api-development-integration.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -164,7 +166,7 @@
                             <h5 class="card-title">SPA Application Development</h5>
                             <p class="card-text">We specialize in fast, interactive single-page applications using modern JavaScript frameworks like Vue.js and React.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/spa-development.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -177,7 +179,7 @@
                             <h5 class="card-title">Payment Gateway Integration</h5>
                             <p class="card-text">We integrate secure and reliable payment gateways like Stripe, PayPal, and others to streamline online transactions.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/payment-gateway-integration.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -190,7 +192,7 @@
                             <h5 class="card-title">Ongoing Maintenance & Support</h5>
                             <p class="card-text">We provide reliable, long-term support and maintenance to ensure your systems run smoothly and securely over time.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/maintenance-support.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -203,7 +205,7 @@
                             <h5 class="card-title">Architecture Design</h5>
                             <p class="card-text">We design scalable, secure, and maintainable system architectures to ensure your application performs reliably as your business grows.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/architecture-design.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -216,7 +218,7 @@
                             <h5 class="card-title">SEO & Digital Marketing</h5>
                             <p class="card-text">Boost your online visibility with our expert SEO and digital marketing services — from on-page optimization to targeted campaigns that drive traffic and conversions.</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-center text-muted">
                             <a href="services/seo.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -322,6 +324,21 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Destroy old instances if any
+        if (window.glightboxInstance && typeof window.glightboxInstance.destroy === 'function') {
+            window.glightboxInstance.destroy();
+        }
+
+        // Create a new one cleanly
+        window.glightboxInstance = GLightbox({
+            selector: '.glightbox',
+            openEffect: 'fade',
+            closeEffect: 'fade',
+        });
+    });
+</script>
 
 </body>
 
