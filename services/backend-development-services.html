@@ -25,6 +25,7 @@
 <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 <!-- Main CSS File -->
 <link href="../assets/css/main.css" rel="stylesheet">
@@ -66,6 +67,7 @@
             text-align: center;
         }
     </style>
+
 </head>
 
 
@@ -109,7 +111,7 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="../contact-us.html">Schedule a Call</a>
+        <a class="btn-getstarted" href="backend-development-services.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/usman-saif22/30min?primary_color=2e4e83'});return false;">Schedule a Call</a>
 
     </div>
 </header>
@@ -151,7 +153,7 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4">
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Custom Backend Development</h3>
                                     <p>Tailored server-side solutions for your business logic.<br>Built for flexibility,
@@ -161,7 +163,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>API Development & Integration</h3>
                                     <p>Connect apps and services with robust APIs.<br>Seamless integration with
@@ -171,7 +173,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Database Design & Optimization</h3>
                                     <p>Efficient data structures for reliable performance.<br>Optimized queries and
@@ -181,7 +183,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Server-Side Logic Implementation</h3>
                                     <p>Custom logic crafted for your app’s core needs.<br>Clean, maintainable code for
@@ -191,7 +193,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Authentication & Authorization Systems</h3>
                                     <p>Secure access control using best practices.<br>Role-based permissions, SSO, and
@@ -201,7 +203,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Cloud Backend Development</h3>
                                     <p>Build scalable systems with AWS, GCP, or Azure.<br>Serverless, containerized, or
@@ -211,7 +213,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Payment Gateway Integration</h3>
                                     <p>Enable secure payments via top gateways.<br>Support for cards, wallets, and
@@ -221,7 +223,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Microservices Architecture</h3>
                                     <p>Decouple systems for better scalability.<br>Independent services built for
@@ -231,7 +233,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Real-Time Systems</h3>
                                     <p>Live updates using WebSockets & broadcasting.<br>Build chat, notifications, and
@@ -241,7 +243,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="service-card border d-flex">
+                            <div class="service-card ai-animated-border  border d-flex">
                                 <div>
                                     <h3>Performance Optimization</h3>
                                     <p>Diagnose and eliminate bottlenecks fast.<br>Ensure your app runs fast and
@@ -571,10 +573,10 @@
                     <p><strong>Email:</strong> <span>hello@gladbit.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
-                    <a target="_blank" href="https://www.twitter.com/gladbit"><i class="bi bi-twitter-x"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/gladbit"><i class="bi bi-facebook"></i></a>
-                    <a target="_blank" href="https://wa.me/00923341049000"><i class="bi bi-whatsapp"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/gladbit"><i class="bi bi-linkedin"></i></a>
+
+
+
+
                 </div>
             </div>
 
@@ -605,13 +607,17 @@
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Get Latest Updates</h4>
-                <p>Subscribe to our newsletter to get latest updates</p>
-                <form action="backend-development-services.html" method="post" class="d-flex">
-                    <input type="email" name="email" class="form-control form-control-subscribe"
-                           placeholder="Enter your email">
-                    <button type="submit" class="btn btn-subscribe">Subscribe</button>
-                </form>
+                <h3 class="mb-4">Let’s Connect</h3>
+                <a href="backend-development-services.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/usman-saif22/30min?primary_color=2e4e83'});return false;" class="btn btn-warning">Schedule a call</a>
+
+                <!-- Calendly link widget end -->
+
+
+
+
+
+
+
             </div>
 
         </div>
@@ -634,6 +640,7 @@
 <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <!-- Main JS File -->
 <script src="../assets/js/main.js"></script>

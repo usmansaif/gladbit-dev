@@ -2534,3 +2534,61 @@ section,
 .case-study-header {
     padding: 3rem 0rem;
 }
+
+.ai-animated-border {
+    position: relative;
+    z-index: 0; /* keep element above pseudo */
+    overflow: hidden;
+}
+
+.ai-animated-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px; /* border thickness */
+    border-radius: inherit;
+    background: linear-gradient(
+        90deg,
+        #8e2de2,
+        #4a00e0,
+        #00eaff,
+        #8e2de2
+    );
+    background-size: 300% 300%;
+    animation: borderMove 6s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    opacity: 0; /* hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ai-animated-border:hover::before {
+    opacity: 1; /* show on hover */
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.client-logo {
+    height: 65px;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);   /* show color on hover */
+}
+

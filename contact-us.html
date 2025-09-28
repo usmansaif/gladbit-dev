@@ -25,12 +25,50 @@
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "url": "https://gladbit.com/contact",
+      "name": "Contact GladBit",
+      "description": "Get in touch with GladBit for custom software development, API integration, and technology solutions. We are available for US-based clients and global projects.",
+      "mainEntity": {
+        "@type": "ProfessionalService",
+        "name": "GladBit",
+        "url": "https://gladbit.com",
+        "logo": "https://gladbit.com/assets/img/logo.svg",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+92-334-104-9000",
+            "contactType": "customer support",
+            "email": "hello@gladbit.com",
+            "areaServed": "US",
+            "availableLanguage": ["English"]
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "114, G2, Wapda Town",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "postalCode": "54770",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://wa.me/00923341049000"
+        ]
+      }
+    }
+</script>
 </head>
 
 
@@ -74,7 +112,7 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="contact-us.html">Schedule a Call</a>
+        <a class="btn-getstarted" href="contact-us.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/usman-saif22/30min?primary_color=2e4e83'});return false;">Schedule a Call</a>
 
     </div>
 </header>
@@ -118,8 +156,8 @@
                             </div>
                             <div class="content">
                                 <h4>Phone Number</h4>
-                                <p><a href="tel:+92 (042) 36434873">+92 (042) 36434873</a></p>
-                                <p><a href="https://wa.me/00923341049000">+92 (334) 104 9000</a></p>
+                                <p><a href="tel:+92 (042) 36434873" target="_blank">+92 (042) 36434873</a></p>
+                                <p><a href="https://wa.me/00923341049000" target="_blank">+92 (334) 104 9000</a></p>
                             </div>
                         </div>
 
@@ -136,41 +174,44 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="contact-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <h3>Get In Touch</h3>
-                        <p>Reach Out. We’re Just a Message Away.</p>
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/usman-saif22/30min?primary_color=2e4e83" style="min-width:320px;height:1000px;"></div>
+                    <!-- Calendly inline widget end -->
 
-                        <form action="contact-us.html#" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
 
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                                </div>
 
-                                <div class="col-md-6 ">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                                </div>
 
-                                <div class="col-12">
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                                </div>
 
-                                <div class="col-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                                </div>
 
-                                <div class="col-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
 
-                            </div>
-                        </form>
 
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
 
             </div>
@@ -221,10 +262,10 @@
                     <p><strong>Email:</strong> <span>hello@gladbit.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
-                    <a target="_blank" href="https://www.twitter.com/gladbit"><i class="bi bi-twitter-x"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/gladbit"><i class="bi bi-facebook"></i></a>
-                    <a target="_blank" href="https://wa.me/00923341049000"><i class="bi bi-whatsapp"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/gladbit"><i class="bi bi-linkedin"></i></a>
+
+
+
+
                 </div>
             </div>
 
@@ -255,13 +296,17 @@
             </div>
 
             <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Get Latest Updates</h4>
-                <p>Subscribe to our newsletter to get latest updates</p>
-                <form action="contact-us.html" method="post" class="d-flex">
-                    <input type="email" name="email" class="form-control form-control-subscribe"
-                           placeholder="Enter your email">
-                    <button type="submit" class="btn btn-subscribe">Subscribe</button>
-                </form>
+                <h3 class="mb-4">Let’s Connect</h3>
+                <a href="contact-us.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/usman-saif22/30min?primary_color=2e4e83'});return false;" class="btn btn-warning">Schedule a call</a>
+
+                <!-- Calendly link widget end -->
+
+
+
+
+
+
+
             </div>
 
         </div>
@@ -284,6 +329,7 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
