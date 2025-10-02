@@ -550,14 +550,14 @@ h6 {
     padding-top: 0;
 }
 
-.footer .footer-links ul a {
+.footer .footer-links ul a, .footer-links a {
     /*color: color-mix(in srgb, var(--default-color), transparent 0%);*/
     color: var(--footer-text-color);
     display: inline-block;
     line-height: 1;
 }
 
-.footer .footer-links ul a:hover {
+.footer .footer-links ul a:hover, .footer-links a:hover {
     color: var(--warning-color);
 }
 
@@ -2592,3 +2592,72 @@ section,
     filter: grayscale(0%);   /* show color on hover */
 }
 
+#cookiePopup.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 420px;
+    max-height: 190px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: none;
+    animation: fadeIn 0.3s ease;
+    font-size: 14px;        /* good readable text */
+    line-height: 1.4;       /* compact but not cramped */
+}
+
+#cookiePopup .card-body {
+    padding: 14px 16px;     /* less padding than default */
+}
+
+#cookiePopup .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#cookiePopup .card-text {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+#cookiePopup .text-muted {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Buttons row */
+#cookiePopup .d-flex.gap-2 {
+    gap: 8px !important;
+}
+
+/* Buttons */
+#cookiePopup button {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    #cookiePopup.cookie-popup {
+        right: 10px;
+        left: 10px;
+        max-width: unset;
+    }
+    #cookiePopup .d-flex.gap-2 {
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+    }
+    #cookiePopup button {
+        flex: 1 1 auto;
+    }
+}

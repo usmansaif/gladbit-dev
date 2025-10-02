@@ -204,6 +204,78 @@
 
 </main>
 
+<!-- Cookie popup (initially hidden if consent exists) -->
+<div id="cookiePopup" class="card cookie-popup shadow-sm border-0" role="dialog" aria-live="polite" aria-label="Cookie consent dialog" style="display:none;">
+    <div class="card-body">
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <h6 class="card-title mb-3 fw-bold">We use cookies</h6>
+                <p class="card-text mb-2">
+                    We use cookies to provide our services and enhance your experience. By using this website you agree with this.
+                    <a href="../cookie-policy.html" target="_blank" rel="noopener">Learn more</a>.
+                </p>
+                <div class="text-muted mb-2">
+                    Manage your preferences or accept all cookies.
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 justify-content-end">
+            <button id="btnAcceptAll" class="btn btn-primary btn-sm">Accept</button>
+            <button id="btnManage" class="btn btn-dark btn-sm">Preferences</button>
+        </div>
+    </div>
+</div>
+
+<!-- Manage Modal -->
+<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="prefsForm" class="needs-validation" novalidate>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">Cookie preferences</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="small text-muted">Choose which cookie categories you allow. You can change this any time.</p>
+
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="prefNecessary" checked disabled>
+                        <label class="form-check-label" for="prefNecessary"><strong>Necessary</strong> — required for site functionality</label>
+                        <div class="form-text small">Always enabled.</div>
+                    </div>
+
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="prefAnalytics">
+                        <label class="form-check-label" for="prefAnalytics"><strong>Analytics</strong> — performance & usage</label>
+                        <div class="form-text small">Helps us improve the website (e.g., Google Analytics).</div>
+                    </div>
+
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="prefMarketing">
+                        <label class="form-check-label" for="prefMarketing"><strong>Marketing</strong> — personalised ads & tracking</label>
+                        <div class="form-text small">Used by advertising partners to show relevant ads.</div>
+                    </div>
+
+                    <!-- Policy Links -->
+                    <div class="mt-4 small text-muted text-center">
+                        <a href="../cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a> •
+                        <a href="../privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a> •
+                        <a href="../terms-and-conditions.html" target="_blank" rel="noopener">Terms & Conditions</a>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="modalReject" class="btn btn-dark" data-bs-dismiss="modal">Reject</button>
+                    <button type="submit" class="btn btn-primary">Save preferences</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <footer id="footer" class="footer">
     <div class="footer-head" style="background-color: #1068b5; padding: 25px; text-align: center;">
         <div class="row justify-content-center">
@@ -228,8 +300,9 @@
                     <p><strong>Address:</strong> 114, G2, Wapda Town</p>
                     <p>Lahore, PK
                         . 54770</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+92 (042) 36434873</span></p>
-                    <p><strong>Email:</strong> <span>hello@gladbit.com</span></p>
+                    <p class="mt-2"><strong>Mobile:</strong> <span>+92 (334) 104 9000</span></p>
+                    <p class="mt-2"><strong>Phone:</strong> <span>+92 (042) 36434873</span></p>
+                    <p class="mt-2"><strong>Email:</strong> <span>hello@gladbit.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
 
@@ -243,8 +316,6 @@
                 <h4>About Company</h4>
                 <ul>
                     <li><a href="../about-us.html">About Us</a></li>
-                    <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
                     <li><a href="../career.html">Career</a></li>
 
                     <li><a href="../our-team.html">Our Team</a></li>
@@ -265,25 +336,32 @@
                 </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-links">
+            <div class="col-lg-4 col-md-6">
                 <h3 class="mb-4">Let’s Connect</h3>
                 <a href="idara-tul-mustafa.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/usman-saif22/30min?primary_color=2e4e83'});return false;" class="btn btn-warning">Schedule a call</a>
-
-                <!-- Calendly link widget end -->
-
-
-
-
-
-
-
             </div>
 
         </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-        <p>Copyright © 2025 Gladbit. All rights reserved.</p>
+    <div class="container copyright mt-4">
+        <div class="row align-items-center text-center text-md-start">
+            <!-- Left: Copyright -->
+            <div class="col-12 col-md-6 mb-2 mb-md-0">
+                <p class="mb-0">
+                    Copyright © 2025 Gladbit. All rights reserved.
+                </p>
+            </div>
+
+            <!-- Right: Links -->
+            <div class="col-12 col-md-6">
+                <div class="footer-links d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
+                    <a href="../privacy-policy.html" class="btn btn-sm p-0">Privacy Policy</a>
+                    <a href="../terms-and-conditions.html" class="btn btn-sm p-0">Terms &amp; Conditions</a>
+                    <a href="idara-tul-mustafa.html#" id="cookieSettingsOpen" class="btn btn-sm p-0" style="display:none;">Cookie settings</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </footer>
@@ -292,7 +370,6 @@
 <a href="idara-tul-mustafa.html#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
 <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/vendor/php-email-form/validate.js"></script>
 <script src="../assets/vendor/aos/aos.js"></script>
@@ -300,6 +377,7 @@
 <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="../assets/js/cookie-consent.js"></script>
 
 <!-- Main JS File -->
 <script src="../assets/js/main.js"></script>
@@ -318,15 +396,14 @@
         });
     });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MSCP6BYJR"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-8MSCP6BYJR');
-</script>
+
+
+
+
+
+
+
 
 </body>
 
