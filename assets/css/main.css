@@ -550,14 +550,18 @@ h6 {
     padding-top: 0;
 }
 
-.footer .footer-links ul a, .footer-links a {
+.footer .footer-links ul a,
+.footer-links a,
+.footer-links button {
     /*color: color-mix(in srgb, var(--default-color), transparent 0%);*/
     color: var(--footer-text-color);
     display: inline-block;
     line-height: 1;
 }
 
-.footer .footer-links ul a:hover, .footer-links a:hover {
+.footer .footer-links ul a:hover,
+.footer-links a:hover,
+.footer-links button:hover {
     color: var(--warning-color);
 }
 
@@ -2660,4 +2664,60 @@ section,
     #cookiePopup button {
         flex: 1 1 auto;
     }
+}
+
+/* Overlay */
+.exit-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Popup Content */
+.exit-popup-content {
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: popupFadeIn 0.4s ease;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.exit-popup-header h2 {
+    color: #2e4e83;
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+.exit-popup-header p {
+    color: #444;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+/* Close Button */
+.exit-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Animation */
+@keyframes popupFadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
 }
