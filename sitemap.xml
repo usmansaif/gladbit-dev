@@ -9,137 +9,212 @@
 
 <url>
   <loc>https://gladbit.com/</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://gladbit.com/index.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/about-us.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/custom-software-development.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/laravel-web-development.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/api-development-integration.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/spa-development.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/payment-gateway-integration.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/falvey-insurance-automation.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/netsites-ecommerce-optimization.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/shipping-label-automation-date-exporters.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/idara-tul-mustafa-event-scheduling.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/pakpoultry-automated-updates.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/case-studies/whatapratha-otp-delivery-confirmation.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/portfolio.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/contact-us.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/maintenance-support.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/faqs.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/cookie-policy.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/privacy-policy.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/terms-and-conditions.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gladbit.com/career.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/our-team.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/pricing.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/career.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/backend-development-services.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://gladbit.com/services/architecture-design.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://gladbit.com/services/seo.html</loc>
-  <lastmod>2025-07-31T20:23:24+00:00</lastmod>
+  <loc>https://gladbit.com/portfolio/idara-tul-mustafa.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/agentpet.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/medlucy-healthcare.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/aaexports.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/netsites-usa.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/dealership-experts.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/petfinder-pk.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/confidential-web-platform.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/falvey-insurance-sdk.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/cosmo-camp.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/pakpoultry-pk.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/shipping-label-printer.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/food-order-confirmation-app.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gladbit.com/portfolio/cshine-pest-control.html</loc>
+  <lastmod>2025-10-08T21:45:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
