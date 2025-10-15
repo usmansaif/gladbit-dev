@@ -15,6 +15,12 @@
     const prefMarketing = document.getElementById('prefMarketing');
     const modalReject = document.getElementById('modalReject');
 
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("%c👋 Welcome to GladBit!", "color: #007bff; font-size: 16px; font-weight: bold;");
+        console.log("%cWe're a modern software services company building scalable digital products.", "color: #555;");
+        console.log("%cInterested in joining us? Visit: https://gladbit.com/careers", "color: #28a745; font-weight: bold;");
+    });
+
     function setCookie(name, value, days) {
         const d = new Date();
         d.setTime(d.getTime() + (days * 86400000));
@@ -46,8 +52,6 @@
     function showPopup() { popup.style.display = 'block'; }
 
     function applyConsent(consent) {
-        console.log("Applying consent:", consent);
-
         // ---- Load Google Analytics only if Analytics is allowed ----
         if (consent.analytics) {
             if (!window.gaLoaded) {
